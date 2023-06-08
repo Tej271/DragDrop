@@ -1,3 +1,40 @@
-body {
+.heading {
     text-align: center;
+    margin-top: 5%
+}
+
+.main-container {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: space-around;
+    margin-top     : 10%;
+}
+
+.first-container {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    border         : 1px solid black;
+    width          : 40%;
+}
+
+.first-container>h5 {
+    font-size: 25px;
+}
+
+.second-container {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    border         : 1px solid black;
+    width          : 40%;
+}
+
+.second-container>h5 {
+    font-size: 25px;
 }

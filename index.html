@@ -5,12 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <link rel="stylesheet" href="./index.css" type="text/css" />
   </head>
   <body>
-    Hello World!
+    <h1 class="heading">Drag 'N' Drop Items</h1>
 
+    <div class="main-container" data-draggable="target">
+      <!-- First Container (Container out of which user will drag-out the items)  -->
+      <div class="first-container">
+        <h5 data-draggable="item">Python</h5>
+        <h5 data-draggable="item">Java</h5>
+        <h5 data-draggable="item">Kotlin</h5>
+        <h5 data-draggable="item">C++</h5>
+        <h5 data-draggable="item">Rust</h5>
+        <h5 data-draggable="item">Dart</h5>
+        <h5 data-draggable="item">GoLang</h5>
+      </div>
 
+      <!-- Second Container (Container in which user will drag-in the items)  -->
+      <div class="second-container" data-draggable="target"><h5>Bye</h5></div>
+    </div>
 
     <script src="./script.js"></script>
   </body>
