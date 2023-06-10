@@ -12,15 +12,27 @@
     margin-top     : 10%;
 }
 
+@media only screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .second-container {
+        margin-top: 5%;
+    }
+}
+
 .first-container {
     display        : flex;
     flex-direction : row;
     align-items    : center;
     flex-wrap      : wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border         : 1px solid black;
     width          : 40%;
-    height         : 150px;
+    min-height     : 150px;
+    padding-left   : 2%;
+    padding-right  : 2%;
 }
 
 .first-container>h5 {
@@ -35,9 +47,19 @@
     justify-content: space-around;
     border         : 1px solid black;
     width          : 40%;
-    height         : 150px;
+    min-height     : 150px;
 }
 
 .second-container>h5 {
     font-size: 25px;
+}
+
+.button-reset {
+    background-color: turquoise;
+    padding         : 15px 25px 15px 25px;
+    border          : 0;
+    border-radius   : 10px;
+    font-weight     : bold;
+    font-family     : monospace;
+    font-size       : 18px;
 }
