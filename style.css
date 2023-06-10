@@ -1,6 +1,7 @@
-.heading {
+.heading,
+.reset-button {
     text-align: center;
-    margin-top: 5%
+    margin-top: 5%;
 }
 
 .main-container {
@@ -19,6 +20,7 @@
     justify-content: space-around;
     border         : 1px solid black;
     width          : 40%;
+    height         : 150px;
 }
 
 .first-container>h5 {
@@ -33,6 +35,7 @@
     justify-content: space-around;
     border         : 1px solid black;
     width          : 40%;
+    height         : 150px;
 }
 
 .second-container>h5 {
