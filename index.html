@@ -5,12 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
-  <body>
-    Hello World!
+  <body id="project">
+    <h1 class="heading">Drag 'N' Drop Items</h1>
 
+    <div class="main-container" data-draggable="target">
+      <!-- First Container (Container out of which user will drag-out the items)  -->
+      <div class="first-container" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h5 draggable="true" ondragstart="drag(event)" id="drag1" data-draggable="item">Python</h5>
+        <h5 draggable="true" ondragstart="drag(event)" id="drag2" data-draggable="item">Java</h5>
+        <h5 draggable="true" ondragstart="drag(event)" id="drag3" data-draggable="item">Kotlin</h5>
+        <h5 draggable="true" ondragstart="drag(event)" id="drag4" data-draggable="item">C++</h5>
+        <h5 draggable="true" ondragstart="drag(event)" id="drag5" data-draggable="item">Rust</h5>
+        <h5 draggable="true" ondragstart="drag(event)" id="drag6" data-draggable="item">Dart</h5>
+        <h5 draggable="true" ondragstart="drag(event)" id="drag7" data-draggable="item">GoLang</h5>
+      </div>
 
+      <!-- Second Container (Container in which user will drag-in the items)  -->
+      <div
+        class="second-container"
+        id="div2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+    </div>
+
+    <div class="reset-button">
+      <button class="button-reset" onclick="reset()">RESET</button>
+    </div>
 
     <script src="./script.js"></script>
   </body>
